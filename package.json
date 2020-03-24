@@ -1,0 +1,87 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack-dev-server --config webpack-config/webpack.dev.js --open",
+    "build": "webpack --config webpack-config/webpack.prod.js",
+    "typecheck": "tsc",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.31",
+    "axios": "^0.19.0",
+    "axios-observable": "^1.1.3",
+    "jexcel": "^3.8.2",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "json-bigint": "^0.3.0",
+    "json2typescript": "^1.2.3",
+    "jsuites": "^2.7.1",
+    "rxjs": "^6.5.4",
+    "split-grid": "^1.0.9",
+    "split.js": "^1.5.11",
+    "vue": "3.0.0-alpha.9"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "3.0.0-alpha.9",
+    "vue-loader": "16.0.0-alpha.3",
+    "@babel/preset-env": "7.7.7",
+    "@types/jest": "^24.0.25",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "babel": "^5.8.38",
+    "babel-loader": "8.0.6",
+    "babel-preset-typescript-vue": "1.0.3",
+    "babel-preset-vue": "^2.0.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "sass-resources-loader": "^2.0.1",
+    "style-loader": "^1.1.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-env": "^0.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "resolveModules": {
+      "aliases": {
+        "@": "src"
+      }
+    },
+    "overrides": {
+      "*": {
+        "peerDependencies": {
+          "vue": "^3.0.0-alpha.3"
+        }
+      }
+    }
+  }
+}

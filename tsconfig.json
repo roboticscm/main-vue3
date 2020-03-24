@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["es2017", "dom"],
+    "declaration": false,
+    "strictNullChecks": false,
+    "target": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": false, // without it, webpack wouldn't resolve vue files without exxtension
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "module": "esnext"
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "test/*.ts"],
+  "exclude": ["node_modules"]
+}

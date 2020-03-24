@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .row {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 50vh;
+      }
+      .A {
+        background: green;
+        height: 100%;
+      }
+      .B {
+        background: purple;
+        height: 100%;
+      }
+      .C {
+        background: rgb(69, 145, 69);
+        height: 100%;
+      }
+
+      .col-sm-12 {
+        flex: 100%;
+      }
+
+      .col-md-4 {
+        flex: 33%;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .col-md-4,
+        .col-sm-12 {
+          flex: 0 0 33%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .col-md-4,
+        .col-sm-12 {
+          flex: 0 0 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="A col-md-4 col-sm-12"></div>
+      <div class="B col-md-4 col-sm-12"></div>
+      <div class="C col-md-4 col-sm-12"></div>
+    </div>
+  </body>
+</html>
