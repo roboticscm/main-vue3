@@ -140,8 +140,8 @@ export default {
               const value = filter[0].value;
               state.pageSize = Number(value);
               emit('init', state.pageSize);
-              resolve('ok');
             }
+            resolve('ok');
           })
           .catch((error) => {
             reject(error);

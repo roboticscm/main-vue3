@@ -8,7 +8,7 @@
         </div>
 
         <div class="default-border col-sm-24 col-md-8  px-sm-0 px-md-1 py-sm-1 py-md-0">
-          <user-list userListId="userListId" :orgId="state.orgId" @selectedRow="onSelectedUser" ref="userListRef" />
+          <user-list userListId="userListId" :orgId="state.orgId" @selection="onSelectedUser" ref="userListRef" />
         </div>
         <div class="default-border col-sm-24 col-md-8 ">
           <role-grid ref="roleListRef" roleListId="roleListId" :orgId="state.orgId"></role-grid>

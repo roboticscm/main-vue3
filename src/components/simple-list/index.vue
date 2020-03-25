@@ -120,6 +120,7 @@ export default {
             false
           )
           .then((res: any) => {
+
             state.data = res.payload;
             state.data.map((it, index) => (it.no = index + viewState.pageSize * (viewState.page - 1) + 1));
             viewState.totalRecords = res.fullCount;

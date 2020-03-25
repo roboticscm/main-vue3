@@ -59,8 +59,8 @@ export default {
           },
           callback: {
             onClick: (event: any, treeId: any, treeNode: any) => {
-              // event.preventDefault();
-              // context.emit('click', { event, treeId, treeNode });
+              event.preventDefault();
+              context.emit('click', { event, treeId, treeNode });
             }
           }
         };
