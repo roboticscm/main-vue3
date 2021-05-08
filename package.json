@@ -20,7 +20,7 @@
     "jexcel": "^3.8.2",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
-    "json-bigint": "^0.3.0",
+    "json-bigint": "^1.0.0",
     "json2typescript": "^1.2.3",
     "jsuites": "^2.7.1",
     "rxjs": "^6.5.4",
