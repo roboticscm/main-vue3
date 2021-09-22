@@ -22,7 +22,7 @@
     "jquery-ui": "^1.12.1",
     "json-bigint": "^0.3.0",
     "json2typescript": "^1.2.3",
-    "jsuites": "^2.7.1",
+    "jsuites": "^4.9.11",
     "rxjs": "^6.5.4",
     "split-grid": "^1.0.9",
     "split.js": "^1.5.11",
